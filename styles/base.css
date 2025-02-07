@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Roboto+Condensed&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1,h2,h3 {
+    font-family: 'Comfortaa', sans-serif;
+}
+
+p, li, ul {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+body {
+    background-color: #CE4257;
+}
+header {
+    background-color: #FF9B54;
+    width: 100%;
+    color: #4F000B;
+    padding: 1rem 1rem;
+}
+
+.navigation{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+.active::before {
+    content: "🍊";
+}
+
+#menu {
+    font-size: 2rem;
+    border: 0;
+    background-color: #FF9B54
+}
+
+#menu::before {
+    content: "☰";
+    color: #4F000B;
+}
+
+#menu.open::before{
+    content: "X";
+}
+
+.navigation li {
+    display: none;
+}
+
+.navigation li a{
+    display: block;
+    padding: 0.8rem 0.4rem;
+    text-align: left;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.navigation li a:visited{
+    color: #4F000B;
+}
+
+.navigation li a:hover{
+    text-decoration: underline;
+    color: #CE4257;
+}
+
+.navigation li a:visited:hover{
+    color: #CE4257;
+}
+
+.open li {
+    display: block;
+}
+
+picture img {
+    width: 90%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+}
+
+#action-call {
+    background-color: #FF9B54;
+    padding: 1rem 0;
+    margin: 1rem 0;
+    text-align: center;
+}
+
+#action-call a{
+    font-family: 'Comfortaa', sans-serif;
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: #4F000B;
+}
+
+#action-call a:hover{
+    color: #CE4257;
+    text-decoration: underline;
+}
+
+
+#coastal-summaries {
+    width: 100%;
+    margin: 1rem 0;
+}
+
+#coastal-summaries section {
+    background-color: #FF9B54;
+    width: 100%;
+    padding: 1rem 1rem;
+    margin: 1rem 0;
+    color: #4F000B;
+}
+
+#coastal-summaries h2 {
+    margin-bottom: 0.5rem;
+}
+
+#weather-today {
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #FF9B54;
+    color: #4F000B;
+}
+
+#weather-today p{
+    line-height: 2rem;
+}
+
+#forecast {
+    padding: 1rem 0;
+    width: 100%;
+    text-align: center;
+    background-color: #FF9B54;
+    color: #4F000B;
+}
+
+
+#forecast p{
+    margin-bottom: 3rem;
+}
+
+#drinks {
+    width: 100%;
+    padding: 1rem 1rem;
+    text-align: center;
+    background-color: #FF9B54;
+    color: #4F000B;
+}
+
+footer {
+    width: 100%;
+    padding: 1rem 1rem;
+    font-family: 'Comfortaa', sans-serif;
+    background-color: #FF9B54;
+    color: #4F000B;
+}
+
+footer li{
+    margin-left: 30px;
+    list-style: none;
+    line-height: 2rem;
+}
+
+#social-media{
+    width: 100%;
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+footer p{
+    line-height: 1.5rem;
+}
+/* Order.html */
+form {
+    font-family: 'Roboto Condensed', sans-serif;
+    width: 100%;
+    margin: 1rem 0;
+    background-color: #FF9B54;
+    color: #4F000B;
+}
+
+fieldset {
+    width: 100%;
+    padding: 2rem 1rem;
+}
+
+label {
+    display: block;
+    padding: 0.4rem 0.2rem;
+}
+
+input {
+    display: block;
+    padding: 0.4rem 0.2rem;
+    margin-bottom: 8px;
+    margin-top: 3px;
+    width: 15rem;
+    color: #4F000B;
+}
+
+
+select {
+    padding: 0.4rem 0.2rem;
+    margin-bottom: 20px;
+    width: 15rem;
+    color: #4F000B;
+}
+
+textarea {
+    display: block;
+    padding: 0.4rem 0.2rem;
+    margin: 3px 0 20px 0;
+    width: 20rem;
+    color: #4F000B;
+}
+
+form button {
+    margin-top: 20px;
+    padding: 0.6rem 1rem;
+    font-size: larger;
+    background-color: #720026;
+    color: #FF9B54;
+}
+
+/* confirmation.html styles */
+#confirmation {
+    text-align: center;
+    color: #4F000B;
+}
+#order-summary {
+    width: 100%;
+    margin: 2rem 0;
+    text-align: left;
+    padding: 1rem 1rem;
+    line-height: 2rem;
+    background-color: #FF9B54;
+    color: #4F000B;
+}
+
+#order-summary h2{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+#order-summary li{
+    margin-left: 40px;
+}
+
+#review {
+    width: 100%;
+    margin: 2rem 0;
+    padding: 1rem 1rem;
+    background-color: #FF9B54;
+    color: #4F000B;
+}
+
+#review h2{
+    margin-bottom: 1.5rem;
+}
+
+#review a{
+    font-size: 25px;
+    text-decoration: none;
+    color: #4F000B;
+}
+
+#review a:hover {
+    text-decoration: underline;
+    color: #CE4257;
+}
+
+#review a:visited{
+    color: #4F000B;
+}
+
+#pickup{
+    padding: 1rem 1rem;
+    background-color: #FF9B54;
+    color: #4F000B;
+}
+
+/* about.html */
+
+#about section{
+    border: solid 1px black;
+    width: 100%;
+    padding: 1rem 2rem;
+    line-height: 2rem;
+    margin: 2rem 0;
+    background-color: #FF9B54;
+    color: #4F000B;
+}
+
+#about iframe{
+    display: block;
+    width: 95%;
+    margin: 2rem auto;
+}
+
+

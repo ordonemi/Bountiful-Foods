@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The home page for the Bountiful Foods business site">
+    <meta name="author" content="Emilio Ordonez Guerrero">
+    <meta property="og:title" content="Bountiful Foods Home Page">
+    <meta property="og:type" content="website">
+    <meta property="image" content="https://geneticliteracyproject.org/wp-content/uploads/elementor/thumbs/local-pe4v26so2x3qshrh6qew2gq2ofiuwy11rjsoqi7wmg.jpg">
+    <meta property="url" content="PLACEHOLDER">
+    <title>Bountiful Foods</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="favicon.ico">
+    <script src="scripts/hamburger.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/forecast.js" defer></script>
+    <script src="scripts/getLastModified.js" defer></script>
+    <script src="scripts/getDrinksOrdered.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Bountiful Foods</h1>
+        <nav>
+            <button id="menu"></button>
+            <ul class="navigation">
+                <li><a class="active" href="#">Home</a></li>
+                <li><a href="order.html">Order Drink</a></li>
+                <li><a href="about.html">About us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="action-call">
+            <a href="order.html">Create your own fruit drink mix today!</a>
+            <picture>
+                <source srcset="images/hero-small.webp" media="(max-width: 500px)">
+                <source srcset="images/hero-medium.webp" media="(max-width: 800px)">
+                <img src="images/hero.webp" alt="Fruit Market" width="1000" height="667">
+            </picture>
+        </section>
+        <section id="weather-today">
+            <h2>Carlsbad</h2>
+            <img id="today-icon" src="#" alt="Weather icon">
+            <p><span id="temp-today"></span></p>
+            <p><span id="conditions-today"></span></p>
+        </section>
+        <section id="coastal-summaries">
+            <section>
+                <h2>Santa Monica</h2>
+                <p>Known for its iconic pier, Santa Monica is a vibrant coastal city with a famous beach, bustling boardwalk, and a lively downtown area. The Santa Monica Pier features an amusement park, aquarium, and various shops and restaurants. The beach offers opportunities for swimming, surfing, and beach volleyball.</p>
+            </section>
+            <section>
+                <h2>Laguna Beach</h2>
+                <p>Renowned for its stunning natural beauty, Laguna Beach is a picturesque coastal town nestled among cliffs and coves. It's famous for its crystal-clear waters, tide pools, and pristine sandy beaches. Art galleries, boutiques, and gourmet dining establishments line the streets in the downtown area.</p>
+            </section>
+            <section>
+                <h2>La Jolla</h2>
+                <p>Located in San Diego, La Jolla boasts some of the most breathtaking coastline in California. Its rugged cliffs, sandy beaches, and abundant marine life make it a popular destination for outdoor enthusiasts and nature lovers. La Jolla Cove is known for its crystal-clear waters ideal for snorkeling and kayaking, while the nearby Children's Pool Beach often hosts harbor seals and sea lions.</p>
+            </section>
+        </section>
+        <section id="forecast">
+            <section>
+                <h2><span id="first-day"></span></h2>
+                <img id="first-icon" src="#" alt="">
+                <p><span id="first-temp"></span></p>
+            </section>
+            <section>
+                <h2><span id="second-day"></span></h2>
+                <img id="second-icon" src="#" alt="">
+                <p><span id="second-temp"></span></p>
+            </section>
+            <section>
+                <h2><span id="third-day"></span></h2>
+                <img id="third-icon" src="#" alt="">
+                <p><span id="third-temp"></span></p>
+            </section>
+        </section>
+        <picture>
+            <source srcset="images/drinks-small.webp" media="(max-width: 500px)">
+            <source srcset="images/drinks-medium.webp" media="(max-width: 800px)">
+            <img src="images/drinks.webp" alt="Fruit Market" width="1500" height="1000">
+        </picture>
+        <h1 id="drinks">Drinks Ordered: <span id="drinks-ordered"></span></h1>
+    </main>
+    <footer>
+        <div>
+            <p>Bountiful Foods</p>
+            <ul>
+                <li>Address: 123 Ocean View Avenue, Carlsbad, California, 92008</li>
+                <li>Phone: (760) 555-1234</li>
+                <li>Email: info@bountifulfoods.com</li>
+            </ul>
+        </div>
+        <div>
+            <p>Sources:</p>
+            <ul>
+                <li>https://www.fruityvice.com/</li>
+                <li>https://openweathermap.org/</li>
+            </ul>   
+        </div>
+        <section id="social-media">
+            <a href="https://twitter.com/"><img src="images/twitter.webp" alt="Twitter"></a>
+            <a href="https://www.facebook.com/"><img src="images/facebook.webp" alt="Facebook"></a>
+            <a href="https://www.instagram.com/"><img src="images/instagram.webp" alt="Instagram"></a>
+        </section>
+        <p>&copy;<span id='currentYear'></span> - Emilio Ordonez Guerrero</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>

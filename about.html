@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The about page provides historical information about Carlsbad California.">
+    <meta name="author" content="Emilio Ordonez Guerrero">
+    <meta property="og:title" content="Bountiful Foods About Us Page">
+    <meta property="og:type" content="website">
+    <meta property="image" content="https://geneticliteracyproject.org/wp-content/uploads/elementor/thumbs/local-pe4v26so2x3qshrh6qew2gq2ofiuwy11rjsoqi7wmg.jpg">
+    <meta property="url" content="PLACEHOLDER">
+    <title>About Us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="favicon.ico">
+    <script src="scripts/hamburger.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/forecast.js" defer></script>
+    <script src="scripts/getLastModified.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Bountiful Foods</h1>
+        <nav>
+            <button id="menu"></button>
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="order.html">Order Drink</a></li>
+                <li><a class="active" href="#">About us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="about">
+        <picture>
+            <source srcset="images/california-small.webp" media="(max-width: 500px)">
+            <source srcset="images/california-medium.webp" media="(max-width: 800px)">
+            <img src="images/california.webp" alt="California Sunset" width="1000" height="600">
+        </picture>
+        <section>
+            <h1>History of Carlsbad</h1>
+            <p>Carlsbad, situated in San Diego County, California, boasts a rich history that dates back centuries. Originally inhabited by the indigenous people of the region, 
+                including the Luiseño people, the area's history reflects a blend of Native American heritage and the arrival of European settlers. In the late 19th century, 
+                a well was dug that produced mineral spring water, leading to the founding of Carlsbad as a destination for its therapeutic waters. The discovery of these mineral 
+                springs by John Frazier in the late 1880s prompted him to establish a spa and resort. Named after the famous spa in Karlsbad, Bohemia (now Karlovy Vary, Czech Republic), 
+                Carlsbad became renowned for its mineral water that was believed to have healing properties.</p>
+        </section>
+        <picture>
+            <source srcset="images/city-small.webp" media="(max-width: 500px)">
+            <source srcset="images/city-medium.webp" media="(max-width: 800px)">
+            <img src="images/city.webp" alt="California Sunset" width="1000" height="677">
+        </picture>
+        <section>
+            <h1>Growth of a City</h1>
+            <p>The region's agricultural opportunities flourished in the early 20th century, with avocado and citrus orchards contributing significantly to the local economy. The completion 
+                of the Santa Fe Railway helped connect Carlsbad to other parts of Southern California, further stimulating its growth.Over the years, Carlsbad has evolved into a 
+                vibrant coastal city, attracting tourists and residents alike with its beautiful beaches, mild climate, thriving businesses, and cultural attractions. 
+                The city continues to honor its history while embracing modernity, offering a blend of historic charm and contemporary amenities.</p>
+        </section>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63582.92205582319!2d-117.33695903262938!3d33.117871499265696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dc73453f3bee59%3A0xa4cb5592fcf65d2f!2sCarlsbad%2C%20CA!5e0!3m2!1sen!2sus!4v1702344396643!5m2!1sen!2sus" width="400" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </main>
+    <footer>
+        <div>
+            <p>Bountiful Foods</p>
+            <ul>
+                <li>Address: 123 Ocean View Avenue, Carlsbad, California, 92008</li>
+                <li>Phone: (760) 555-1234</li>
+                <li>Email: info@bountifulfoods.com</li>
+            </ul>
+        </div>
+        <div>
+            <p>Sources:</p>
+            <ul>
+                <li>https://www.fruityvice.com/</li>
+                <li>https://openweathermap.org/</li>
+            </ul>   
+        </div>
+        <section id="social-media">
+            <a href="https://twitter.com/"><img src="images/twitter.webp" alt="Twitter"></a>
+            <a href="https://www.facebook.com/"><img src="images/facebook.webp" alt="Facebook"></a>
+            <a href="https://www.instagram.com/"><img src="images/instagram.webp" alt="Instagram"></a>
+        </section>
+        <p>&copy;<span id='currentYear'></span> - Emilio Ordonez Guerrero</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+</html>

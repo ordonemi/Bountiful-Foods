@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The confirmation page for customers who have ordered a drink.">
+    <meta name="author" content="Emilio Ordonez Guerrero">
+    <meta property="og:title" content="Bountiful Foods Order Confirmation Page">
+    <meta property="og:type" content="website">
+    <meta property="image" content="https://geneticliteracyproject.org/wp-content/uploads/elementor/thumbs/local-pe4v26so2x3qshrh6qew2gq2ofiuwy11rjsoqi7wmg.jpg">
+    <meta property="url" content="PLACEHOLDER">
+    <title>Order Confirmation</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="favicon.ico">
+    <script src="scripts/hamburger.js" defer></script>
+    <script src="scripts/getLastModified.js" defer></script>
+    <script src="scripts/confirmation.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Bountiful Foods</h1>
+        <nav>
+            <button id="menu"></button>
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="order.html">Order Drink</a></li>
+                <li><a href="about.html">About us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="confirmation">
+        <h1>Thank you for your order</h1>
+        <p>An email confirmation has been sent to <span id="order-email"></span>.</p>
+        <section id="order-summary">
+            <h2>Order Summary</h2>
+            <p>Name:   <span id="order-name"></span></p>
+            <p>Email:  <span id="order-email2"></span></p>
+            <p>Phone:  <span id="order-phone"></span></p>
+            <p>Date:   <span id="order-date"></span></p>
+            <p>Fruits Selected:</p>
+            <ul>
+                <li id="first"></li>
+                <li id="second"></li>
+                <li id="third"></li>
+            </ul>
+            <p>Special Instructions: <span id="order-instructions"></span></p>
+            <h2>Nutritional Overview</h2>
+            <p>Carbohydrates: <span id="carbs"></span></p>
+            <p>Protein: <span id="protein"></span></p>
+            <p>Fat: <span id="fat"></span></p>
+            <p>Sugar: <span id="sugar"></span></p>
+            <p>Calories: <span id="calories"></span></p>
+        </section>
+        <section id="pickup">
+            <h1>Your order should be ready in 15 minutes.</h1>
+            <p>If there is anything wrong with your order, please call us at (760) 555-1234.</p>
+        </section>
+        <section id="review">
+            <h2>Loved our service? Leave a review!</h2>
+            <a id="review-button" href="https://www.yelp.com/search?find_desc=Carlsbad+California&find_loc=San+Francisco%2C+CA">Let's do it!</a>
+        </section>
+    </main>
+    <footer>
+        <div>
+            <p>Bountiful Foods</p>
+            <ul>
+                <li>Address: 123 Ocean View Avenue, Carlsbad, California, 92008</li>
+                <li>Phone: (760) 555-1234</li>
+                <li>Email: info@bountifulfoods.com</li>
+            </ul>
+        </div>
+        <div>
+            <p>Sources:</p>
+            <ul>
+                <li>https://www.fruityvice.com/</li>
+                <li>https://openweathermap.org/</li>
+            </ul>   
+        </div>
+        <section id="social-media">
+            <a href="https://twitter.com/"><img src="images/twitter.webp" alt="Twitter"></a>
+            <a href="https://www.facebook.com/"><img src="images/facebook.webp" alt="Facebook"></a>
+            <a href="https://www.instagram.com/"><img src="images/instagram.webp" alt="Instagram"></a>
+        </section>
+        <p>&copy;<span id='currentYear'></span> - Emilio Ordonez Guerrero</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>

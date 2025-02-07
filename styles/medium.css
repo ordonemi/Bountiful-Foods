@@ -1,0 +1,134 @@
+@media screen and (min-width: 800px){
+    header h1 {
+        text-align: center;
+    }
+    .navigation {
+        flex-direction: row;
+        justify-content: space-evenly;
+        font-size: 30px;
+        padding: 1rem 0;
+    }
+
+    .navigation li {
+        display: block;
+    }
+
+    .navigation li a{
+        display: block;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    #action-call{
+        padding: 2rem 0;
+    }
+
+    #action-call a{
+        font-size: 25px;
+    }
+
+    #weather-today {
+        width: 50%;
+        margin: 0 auto;
+        padding: 3rem 0;
+    }
+
+    #coastal-summaries {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        line-height: 2rem;
+    }
+
+    #coastal-summaries h2 {
+        text-align: center;
+    }
+
+    #coastal-summaries section:nth-of-type(1){
+        grid-column: 1/2;
+        grid-row: 1/2;
+        margin: 0 0;
+    }
+
+    #coastal-summaries section:nth-of-type(2){
+        grid-column: 2/3;
+        grid-row: 2/3;
+        margin: 0 0;
+    }
+
+    #coastal-summaries section:nth-of-type(3){
+        grid-column: 1/2;
+        grid-row: 3/4;
+        margin: 0 0;
+    }
+
+    #forecast {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding: 4rem 0;
+    }
+
+    #forecast p{
+        margin-bottom: 0;
+    }
+
+    footer {
+        text-align: center;
+    }
+
+    /* order.html */
+
+    form {
+        width: 70%;
+        margin: 2rem auto;
+    }
+
+    textarea {
+        width: 28rem;
+        height: 5rem;
+    }
+
+    /* confirmation.html */
+
+    #confirmation{
+        margin-top: 3rem;
+    }
+    #order-summary {
+        width: 70%;
+        margin: 2rem auto 4rem auto;
+        font-size: larger;
+    }
+
+    #order-summary  h2:nth-of-type(2){
+        margin-top: 20px;
+    }
+
+    #review {
+        width: 80%;
+        margin: 4rem auto 4rem auto;
+    }
+
+    /*  aboutus.html */
+
+    #about section {
+        width: 80%;
+        margin: 4rem auto;
+    }
+
+    #about section h1 {
+        text-align: center;
+    }
+
+    #about section p {
+        font-size: larger;
+        line-height: 3rem;
+    }
+
+    #about iframe {
+        margin: 4rem auto;
+    }
+
+}
