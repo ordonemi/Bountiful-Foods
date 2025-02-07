@@ -21,7 +21,7 @@ This project is a **fully functional website** built to showcase Bountiful Foods
 - **Google Maps API** – Embeds an interactive map for business location.  
 
 ### Usage  
-[Bountiful Foods Site]()
+[Bountiful Foods Site](https://ordonemi.github.io/Bountiful-Foods/)
 
 ### Future Enhancements  
 - 🚀 **User Accounts & Order Tracking** – Allow users to create accounts and track their orders.  
